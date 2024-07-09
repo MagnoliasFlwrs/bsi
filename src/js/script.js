@@ -84,12 +84,12 @@ const closeModal = (modal) => {
 
 }
 
-const documentsModal = document.querySelector('.documents-modal');
+const tendersModal = document.querySelector('.tenders-modal');
 const newsSingleModal = document.querySelector('.news-single-modal');
 const contactsModal = document.querySelector('.contacts-modal');
-const showNewsSingleModalBtns = document.querySelectorAll('.news-card');
+const showNewsSingleModalBtns = document.querySelectorAll('.show-news-modal');
 const showContactsModalBtns =  document.querySelectorAll('.show-contacts-modal');
-const showDocumentsModalBtns =  document.querySelectorAll('.show-documents-modal');
+const showTendersModalBtns =  document.querySelectorAll('.show-tenders-modal');
 
 showNewsSingleModalBtns?.forEach(el=> {
     el.addEventListener('click' , (e) => {
@@ -106,10 +106,10 @@ showContactsModalBtns?.forEach(el=> {
     })
 })
 
-showDocumentsModalBtns?.forEach(el=> {
+showTendersModalBtns?.forEach(el=> {
     el.addEventListener('click' , (e) => {
         e.preventDefault();
-        showModal(documentsModal);
-        closeModal(documentsModal);
+        showModal(tendersModal);
+        closeModal(tendersModal);
     })
 })
