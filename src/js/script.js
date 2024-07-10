@@ -113,3 +113,11 @@ showTendersModalBtns?.forEach(el=> {
         closeModal(tendersModal);
     })
 })
+
+Fancybox.bind('[data-fancybox]', {
+
+});
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+
+});
