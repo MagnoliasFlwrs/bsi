@@ -17,7 +17,7 @@ a {
   --brand-color: #346EDD;
 }
 
-ul, li {
+ul, ol, li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -2290,6 +2290,7 @@ body.no-bg {
   flex-direction: column;
   gap: 14px;
   padding-left: 30px;
+  counter-reset: list-counter;
 }
 @media (max-width: 1024px) {
   .modal .modal-content .news-block ol {
@@ -2298,9 +2299,35 @@ body.no-bg {
 }
 .modal .modal-content .news-block ol li {
   display: flex;
+  position: relative;
   gap: 10px;
   align-items: center;
   cursor: pointer;
+  color: #575B87;
+  font-family: "Mplus 1p";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+}
+.modal .modal-content .news-block ol li:before {
+  content: counter(list-counter) "";
+  counter-increment: list-counter;
+  color: #FFF;
+  font-family: "Mplus 1p";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 15px */
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #346EDD;
+  border-radius: 50px;
 }
 .modal .modal-content .news-block ol li span {
   color: #FFF;
@@ -2318,14 +2345,6 @@ body.no-bg {
   flex-shrink: 0;
   background: #346EDD;
   border-radius: 50px;
-}
-.modal .modal-content .news-block ol li p {
-  color: #575B87;
-  font-family: "Mplus 1p";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 20px */
 }
 .modal .modal-content .news-block ul {
   display: flex;
@@ -2803,6 +2822,7 @@ body.no-bg {
   flex-direction: column;
   gap: 14px;
   padding-left: 30px;
+  counter-reset: list-counter;
 }
 @media (max-width: 1024px) {
   .page-content .page-content-inner .news-block ol {
@@ -2811,9 +2831,35 @@ body.no-bg {
 }
 .page-content .page-content-inner .news-block ol li {
   display: flex;
+  position: relative;
   gap: 10px;
   align-items: center;
   cursor: pointer;
+  color: #575B87;
+  font-family: "Mplus 1p";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+}
+.page-content .page-content-inner .news-block ol li:before {
+  content: counter(list-counter) "";
+  counter-increment: list-counter;
+  color: #FFF;
+  font-family: "Mplus 1p";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 15px */
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #346EDD;
+  border-radius: 50px;
 }
 .page-content .page-content-inner .news-block ol li span {
   color: #FFF;
@@ -2831,14 +2877,6 @@ body.no-bg {
   flex-shrink: 0;
   background: #346EDD;
   border-radius: 50px;
-}
-.page-content .page-content-inner .news-block ol li p {
-  color: #575B87;
-  font-family: "Mplus 1p";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 20px */
 }
 .page-content .page-content-inner .news-block ul {
   display: flex;
